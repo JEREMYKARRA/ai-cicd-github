@@ -10,6 +10,9 @@ def is_even(n: int) -> bool:
     """Check if a number is even."""
     return n % 2 == 0
 
+def multiply(a: int, b: int) -> int:
+    """Multiply two numbers."""
+    return a * b
 
 def reverse_string(s: str) -> str:
     """Reverse a string."""
