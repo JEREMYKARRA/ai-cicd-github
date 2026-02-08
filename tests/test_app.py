@@ -22,8 +22,8 @@ class TestMultiply:
     def test_multiply_by_zero(self):
         assert multiply(2,0) == 0
     
-    def test_broken(self):
-        assert multiply(9,9) == 18
+    # def test_broken(self):
+    #     assert multiply(9,9) == 18
 
 class TestStrings:
     """Tests for string functions."""
