@@ -27,8 +27,9 @@ jobs:
           run: pip install -r requirements.txt
 
         - name: PR diff
-          run: | 
+          run: |
             git diff origin/main...HEAD > pr_diff.txt
+
 
         - name: AI Review
           id: ai-review
