@@ -17,3 +17,13 @@ def multiply(a: int, b: int) -> int:
 def reverse_string(s: str) -> str:
     """Reverse a string."""
     return s[::-1]
+
+def factorial(n: int) -> int:
+    """Find the factorial of n."""
+    if n<0:
+        raise ValueError("Factorial not defined for negative n.")
+    if n<=1:
+        return 1
+    
+    return n * factorial(n-1)
+
