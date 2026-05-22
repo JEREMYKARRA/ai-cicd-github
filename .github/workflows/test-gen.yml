@@ -34,7 +34,7 @@ jobs:
             - name: Get changed Python files
               id: changed-files
               run: |
-                FILES=$(git diff --name-only origin/${{ github.base_ref }}..HEAD) -- '*.py' | '^tests/' | tr '\n')
+                FILES=$(git diff --name-only origin/${{ github.base_ref }}..HEAD -- '*.py' | grep -v '^tests/' | tr '\n' ' ')
                 echo "files=$FILES" >> $GITHUB_OUTPUT
             
             - name: Generate tests
